@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IA & Responsabilidad · Ética Aplicada</title>
+  <meta name="description" content="¿Quién es responsable cuando una IA toma una decisión injusta? Explora la ética de los algoritmos y descubre tu perfil de responsabilidad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-logo">IA & Ética</div>
+    <ul class="nav-links">
+      <li><a href="#actores">Actores</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#quiz">Cuestionario</a></li>
+      <li><a href="#quiz" class="nav-cta">Tomar el test</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <span class="hero-badge">🤖 <span>Ética Aplicada · Psicología · Tecnología</span></span>
+    <h1>Si una IA te niega<br /><em>una oportunidad injustamente,</em><br />¿a quién le exiges explicaciones?</h1>
+    <p class="hero-sub">Examina cómo se distribuye la responsabilidad entre desarrolladores, instituciones y usuarios cuando un algoritmo discrimina o perjudica a alguien.</p>
+    <div class="hero-tags">
+      <span class="tag tag-rose">🧠 Psicología</span>
+      <span class="tag tag-sage">⚖️ Ética Aplicada</span>
+      <span class="tag tag-sky">💻 Tecnología</span>
+    </div>
+    <button class="hero-cta" id="hero-btn" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">
+      Descubre tu perfil <span class="arrow">→</span>
+    </button>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      Explorar
+    </div>
+  </section>
+
+  <!-- ACTORES -->
+  <section class="actors-section" id="actores">
+    <div class="container">
+      <div class="fade-up">
+        <p class="section-label">¿Quién es responsable?</p>
+        <h2 class="section-title">Los actores del sistema algorítmico</h2>
+        <p class="section-desc">La responsabilidad no recae en una sola entidad. Es una red de decisiones, omisiones y poderes distribuidos a lo largo de toda la cadena.</p>
+      </div>
+      <div class="actors-grid">
+        <div class="actor-card card-rose fade-up">
+          <div class="actor-icon icon-rose">👩‍💻</div>
+          <h3>Desarrolladores &amp; Científicos de Datos</h3>
+          <p>Diseñan los modelos, eligen los datos de entrenamiento y definen qué optimizar. Sus sesgos —conscientes o no— quedan codificados en el algoritmo.</p>
+          <div class="responsibility-level">
+            <div class="resp-bar"><div class="resp-fill fill-rose" data-width="90"></div></div>
+            <span class="resp-label">90% implicación</span>
+          </div>
+        </div>
+        <div class="actor-card card-sage fade-up">
+          <div class="actor-icon icon-sage">🏛️</div>
+          <h3>Instituciones &amp; Empresas</h3>
+          <p>Deciden qué sistemas implementar, en qué contextos y con qué controles. La presión por eficiencia suele desplazar la preocupación por la equidad.</p>
+          <div class="responsibility-level">
+            <div class="resp-bar"><div class="resp-fill fill-sage" data-width="82"></div></div>
+            <span class="resp-label">82% implicación</span>
+          </div>
+        </div>
+        <div class="actor-card card-sky fade-up">
+          <div class="actor-icon icon-sky">🧑‍💼</div>
+          <h3>Usuarios &amp; Operadores</h3>
+          <p>Aplican la decisión automatizada sin cuestionarla. La delegación ciega en sistemas algorítmicos también es una forma de responsabilidad moral.</p>
+          <div class="responsibility-level">
+            <div class="resp-bar"><div class="resp-fill fill-sky" data-width="65"></div></div>
+            <span class="resp-label">65% implicación</span>
+          </div>
+        </div>
+        <div class="actor-card card-lavender fade-up">
+          <div class="actor-icon icon-lavender">⚖️</div>
+          <h3>Reguladores &amp; Estado</h3>
+          <p>Tienen el poder de establecer marcos legales, pero con frecuencia van décadas por detrás de la tecnología que intentan regular.</p>
+          <div class="responsibility-level">
+            <div class="resp-bar"><div class="resp-fill fill-lavender" data-width="55"></div></div>
+            <span class="resp-label">55% implicación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="casos">
+    <div class="container-sm">
+      <div class="fade-up">
+        <p class="section-label">Casos reales documentados</p>
+        <h2 class="section-title">Cuando el algoritmo falla</h2>
+        <p class="section-desc">Estos no son escenarios hipotéticos. Son situaciones que ya están afectando a personas reales en todo el mundo.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--rose-dark);"></div>
+          <p class="timeline-step">Contratación · 2018</p>
+          <h3>Amazon descarta currículums de mujeres</h3>
+          <p>El sistema de IA para selección de personal aprendió a penalizar palabras como "femenino" basándose en una historia de contratación mayoritariamente masculina. Se desmanteló en secreto tras años de uso.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--sky-dark);"></div>
+          <p class="timeline-step">Justicia penal · 2016</p>
+          <h3>COMPAS predice reincidencia con sesgo racial</h3>
+          <p>El algoritmo usado en tribunales de EE.UU. catalogaba a personas afroamericanas como de "alto riesgo" con el doble de frecuencia que a personas blancas con perfiles similares.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--sage-dark);"></div>
+          <p class="timeline-step">Crédito · 2019</p>
+          <h3>Apple Card otorga menor crédito a mujeres</h3>
+          <p>El algoritmo de Goldman Sachs asignó límites de crédito significativamente más bajos a mujeres que a sus maridos, incluso cuando compartían activos financieros.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--lavender-dark);"></div>
+          <p class="timeline-step">Salud · 2019</p>
+          <h3>Algoritmo sanitario perjudica a pacientes negros</h3>
+          <p>Un sistema usado en hospitales de EE.UU. asignó menor prioridad de atención a pacientes afroamericanos al usar el costo histórico como proxy de necesidad médica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="fade-up" style="text-align:center">
+        <p class="section-label">En cifras</p>
+        <h2 class="section-title" style="margin:0 auto 16px">El alcance del problema</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card fade-up">
+          <div class="stat-number" style="color: var(--rose-dark)">67%</div>
+          <div class="stat-label">de empresas no auditan sus sistemas de IA por sesgos antes de implementarlos</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number" style="color: var(--sage-dark)">2.5×</div>
+          <div class="stat-label">más probabilidades de ser rechazado por algoritmos de crédito si eres de una minoría étnica</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number" style="color: var(--sky-dark)">14</div>
+          <div class="stat-label">países han aprobado legislación específica sobre IA desde 2020</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number" style="color: var(--lavender-dark)">89%</div>
+          <div class="stat-label">de personas afectadas por decisiones algorítmicas nunca reciben una explicación</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="container-sm">
+      <blockquote>«La neutralidad tecnológica es un mito. Todo algoritmo refleja las elecciones —y los prejuicios— de quienes lo diseñaron.»</blockquote>
+      <p class="quote-author">— Perspectiva de la ética algorítmica contemporánea</p>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz">
+    <div class="container-sm">
+      <div class="fade-up">
+        <p class="section-label">Cuestionario interactivo</p>
+        <h2 class="section-title">¿Cuál es tu perfil ético?</h2>
+        <p class="section-desc">Enfrenta dilemas reales y descubre cómo distribuyes la responsabilidad moral cuando una IA toma una decisión injusta.</p>
+      </div>
+
+      <div class="quiz-wrapper" id="quiz-container">
+        <div class="quiz-progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-bar" style="width: 20%"></div>
+          </div>
+          <span class="progress-text" id="progress-text">1 / 5</span>
+        </div>
+
+        <!-- Q1 -->
+        <div class="quiz-question active" id="q0">
+          <div class="question-scenario">📋 Escenario: Un banco usa un algoritmo para aprobar préstamos. María solicita uno y es rechazada automáticamente. Tiene buen historial crediticio, pero vive en un barrio con muchos inmigrantes —lo cual el modelo asocia con "alto riesgo".</div>
+          <div class="question-text">¿A quién debería exigirle explicaciones María en primer lugar?</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="selectAnswer(this,0,true)" id="q0-opt-0">
+              <div class="option-letter">A</div>
+              <div>Al banco, por implementar un sistema que discrimina por lugar de residencia</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,0,false)" id="q0-opt-1">
+              <div class="option-letter">B</div>
+              <div>A los programadores que entrenaron el modelo con esos datos</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,0,false)" id="q0-opt-2">
+              <div class="option-letter">C</div>
+              <div>Al regulador financiero que no impuso controles contra el sesgo</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,0,false)" id="q0-opt-3">
+              <div class="option-letter">D</div>
+              <div>A nadie: las decisiones automatizadas no tienen responsable claro</div>
+            </button>
+          </div>
+          <div class="quiz-feedback" id="fb-0"></div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-question" id="q1">
+          <div class="question-scenario">⚖️ Escenario: Un juez usa un software de predicción de reincidencia para decidir la libertad condicional de Carlos. El software lo clasifica como "alto riesgo". El juez sigue la recomendación sin revisarla.</div>
+          <div class="question-text">¿Puede el juez delegar su responsabilidad moral en el algoritmo?</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="selectAnswer(this,1,false)" id="q1-opt-0">
+              <div class="option-letter">A</div>
+              <div>Sí, si el algoritmo tiene evidencia científica que lo respalde</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,1,true)" id="q1-opt-1">
+              <div class="option-letter">B</div>
+              <div>No, la autoridad humana no puede eludir su responsabilidad usando una máquina</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,1,false)" id="q1-opt-2">
+              <div class="option-letter">C</div>
+              <div>Depende: si el fabricante garantizó la precisión, la empresa es culpable</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,1,false)" id="q1-opt-3">
+              <div class="option-letter">D</div>
+              <div>Sí, si el protocolo institucional lo permite</div>
+            </button>
+          </div>
+          <div class="quiz-feedback" id="fb-1"></div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-question" id="q2">
+          <div class="question-scenario">🏥 Escenario: Un hospital implementa un algoritmo que prioriza pacientes. Lucía, una paciente de escasos recursos, recibe menor atención porque el modelo usa el gasto médico histórico como indicador de necesidad.</div>
+          <div class="question-text">¿Qué principio ético está siendo vulnerado principalmente?</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="selectAnswer(this,2,false)" id="q2-opt-0">
+              <div class="option-letter">A</div>
+              <div>Autonomía: Lucía no pudo elegir si el algoritmo tomaba esa decisión</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,2,false)" id="q2-opt-1">
+              <div class="option-letter">B</div>
+              <div>No maleficencia: el sistema está causando un daño directo y evitable</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,2,true)" id="q2-opt-2">
+              <div class="option-letter">C</div>
+              <div>Justicia: el algoritmo reproduce desigualdades socioeconómicas preexistentes</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,2,false)" id="q2-opt-3">
+              <div class="option-letter">D</div>
+              <div>Beneficencia: el hospital no está actuando en el mayor beneficio del paciente</div>
+            </button>
+          </div>
+          <div class="quiz-feedback" id="fb-2"></div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="quiz-question" id="q3">
+          <div class="question-scenario">🛡️ Escenario: Una empresa de RRHH compra un sistema de IA para filtrar CVs. La empresa que lo vende asegura que es "neutral". Los datos de entrenamiento venían de contrataciones históricas donde el 85% eran hombres.</div>
+          <div class="question-text">¿Puede un algoritmo ser verdaderamente neutral?</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="selectAnswer(this,3,false)" id="q3-opt-0">
+              <div class="option-letter">A</div>
+              <div>Sí, si se usan suficientes datos y técnicas estadísticas avanzadas</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,3,false)" id="q3-opt-1">
+              <div class="option-letter">B</div>
+              <div>Sí, la matemática es objetiva por definición</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,3,true)" id="q3-opt-2">
+              <div class="option-letter">C</div>
+              <div>No, todo modelo refleja los valores y decisiones de quienes lo diseñaron y los datos que usó</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,3,false)" id="q3-opt-3">
+              <div class="option-letter">D</div>
+              <div>Depende del tipo de problema que resuelva</div>
+            </button>
+          </div>
+          <div class="quiz-feedback" id="fb-3"></div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="quiz-question" id="q4">
+          <div class="question-scenario">🌐 Escenario: Un gobierno propone regular los sistemas de IA de alto riesgo obligando a las empresas a publicar sus algoritmos y demostrar que no discriminan. Las empresas se oponen argumentando secreto comercial.</div>
+          <div class="question-text">¿Debería prevalecer la transparencia algorítmica sobre el secreto empresarial?</div>
+          <div class="options-grid">
+            <button class="option-btn" onclick="selectAnswer(this,4,true)" id="q4-opt-0">
+              <div class="option-letter">A</div>
+              <div>Sí, cuando los sistemas afectan derechos fundamentales, la transparencia es irrenunciable</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,4,false)" id="q4-opt-1">
+              <div class="option-letter">B</div>
+              <div>No, el secreto comercial incentiva la innovación que beneficia a todos</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,4,false)" id="q4-opt-2">
+              <div class="option-letter">C</div>
+              <div>Depende del sector: en salud sí, en banca no necesariamente</div>
+            </button>
+            <button class="option-btn" onclick="selectAnswer(this,4,false)" id="q4-opt-3">
+              <div class="option-letter">D</div>
+              <div>No, la regulación suele frenar el progreso tecnológico</div>
+            </button>
+          </div>
+          <div class="quiz-feedback" id="fb-4"></div>
+        </div>
+
+        <!-- RESULTADO -->
+        <div class="quiz-result" id="quiz-result">
+          <div class="result-circle" id="result-circle">
+            <span id="result-score-text">0/5</span>
+            <small>aciertos</small>
+          </div>
+          <div class="result-title" id="result-title">Tu perfil ético</div>
+          <p class="result-desc" id="result-desc">Descripción del perfil</p>
+          <div class="profile-badges" id="profile-badges"></div>
+          <div class="result-actions">
+            <button class="btn-primary" onclick="restartQuiz()">🔄 Repetir cuestionario</button>
+            <button class="btn-outline" onclick="shareResult()">↗ Compartir resultado</button>
+          </div>
+        </div>
+
+        <div class="quiz-nav" id="quiz-nav">
+          <button class="btn-outline" id="btn-prev" onclick="prevQuestion()" disabled>← Anterior</button>
+          <button class="btn-primary" id="btn-next" onclick="nextQuestion()" disabled>Siguiente →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">IA &amp; Responsabilidad</div>
+    <p class="footer-desc">Un espacio para reflexionar sobre las implicaciones éticas de la inteligencia artificial en la sociedad.</p>
+    <ul class="footer-links">
+      <li><a href="#actores">Actores</a></li>
+      <li><a href="#casos">Casos reales</a></li>
+      <li><a href="#quiz">Cuestionario</a></li>
+    </ul>
+    <p class="footer-copy">Ética Aplicada · Psicología · Tecnología · 2025</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
